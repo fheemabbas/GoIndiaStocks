@@ -36,18 +36,18 @@ function Header() {
           <Image src="/images/gostock.png" width={100} height={55} />
         </div>
         <div className="flex items-center space-x-2 w-full max-sm:w-1/3 md:max-w-xs">
-          <div className="flex items-center bg-[#7FFFD4] dark:md:bg-gray-700 dark:text-black py-2.5 max-sm:px-0 px-4  rounded w-full">
+          <div className="flex items-center bg-[#7FFFD4] dark:md:bg-gray-700 dark:text-black py-2.5 max-sm:px-0 px-4  rounded">
             <input
               type="text"
               placeholder="Search"
               className=" bg-transparent text-sm focus:outline-none md:w-10/12 sm:w-full placeholder-black/70 dark:placeholder-black flex-grow"
             />
-            <SearchRoundedIcon />
+            <SearchRoundedIcon className="dark:text-white" />
           </div>
         </div>
         {/* Right */}
 
-        <div className="flex items-center max-sm:w-1/3 ">
+        <div className="flex items-center ">
           <HeaderLink text="Home" feed active />
           <div className="pl-20">
             <button
