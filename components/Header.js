@@ -40,7 +40,7 @@ function Header() {
             <input
               type="text"
               placeholder="Search"
-              className=" bg-transparent text-sm focus:outline-none md:w-10/12 px-1 sm:w-full placeholder-black/70 dark:placeholder-black flex-grow"
+              className=" bg-transparent text-sm focus:outline-none md:w-10/12 w-full px-1 sm:w-full placeholder-black/70 dark:placeholder-black flex-grow"
             />
             <SearchRoundedIcon className="dark:text-white" />
           </div>
