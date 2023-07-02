@@ -49,7 +49,7 @@ export default function Home({ posts, articles }) {
           <div className={` ${section !== "disscussion" ? "hidden" : ""}`}>
             <Feed posts={posts} />
           </div>
-          <div className={` ${section !== "m_stories" ? "sm:hidden md:flex" : ""}`}>
+          <div className={` ${section !== "m_stories" ? "max-sm:hidden max-md:flex" : ""}`}>
             <GridStory isExpanded={isExpanded} />
           </div>
         </div>
