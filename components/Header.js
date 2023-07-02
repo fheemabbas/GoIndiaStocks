@@ -32,18 +32,11 @@ function Header() {
     <>
       <header className="sticky top-0 z-40 bg-white dark:bg-[#1D2226] flex items-center justify-around py-1.5 max-sm:px-0 px-3 focus-within:shadow-lg">
         {/* Left */}
-        <div className="flex items-center space-x-2 w-full max-sm:w-1/2 md:max-w-xs">
-          {mounted && (
-            <>
-              {resolvedTheme === "dark" ? (
-                <Image src="/images/gostock.png" width={100} height={55} />
-              ) : (
-                <Image src="/images/gostock.png" width={100} height={55} />
-              )}
-            </>
-          )}
-
-          <div className="flex items-center bg-[#7FFFD4] dark:md:bg-gray-700 dark:text-white py-2.5 max-sm:px-0 px-4  rounded w-full">
+        <div className="max-sm:w-1/3">
+          <Image src="/images/gostock.png" width={100} height={55} />
+        </div>
+        <div className="flex items-center space-x-2 w-full max-sm:w-1/3 md:max-w-xs">
+          <div className="flex items-center bg-[#7FFFD4] dark:md:bg-gray-700 dark:text-black py-2.5 max-sm:px-0 px-4  rounded w-full">
             <input
               type="text"
               placeholder="Search"
@@ -54,7 +47,7 @@ function Header() {
         </div>
         {/* Right */}
 
-        <div className="flex items-center ">
+        <div className="flex items-center max-sm:w-1/3 ">
           <HeaderLink text="Home" feed active />
           <div className="pl-20">
             <button
