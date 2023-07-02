@@ -36,7 +36,7 @@ function Header() {
           <Image src="/images/gostock.png" width={100} height={55} />
         </div>
         <div className="flex items-center space-x-2 w-full max-sm:w-1/3 md:max-w-xs">
-          <div className="flex items-center bg-[#7FFFD4] dark:md:bg-gray-700 dark:text-black py-2.5 max-sm:px-0 px-4  rounded">
+          <div className="flex items-center bg-[#7FFFD4] dark:md:bg-gray-700 dark:text-black py-2.5 max-sm:px-0 px-4  rounded-md">
             <input
               type="text"
               placeholder="Search"
@@ -47,9 +47,9 @@ function Header() {
         </div>
         {/* Right */}
 
-        <div className="flex items-center ">
+        <div className="flex items-center max-sm:w-1/3 max-sm:justify-end">
           <HeaderLink text="Home" feed active />
-          <div className="pl-20">
+          <div className="pl-20 hidden md:flex">
             <button
               className="text-blue-700 font-semibold border border-blue-700 px-5 py-1.5 transition-all hover:border-2 hidden md:block"
             // onClick={() => signIn(provider.id, { callbackUrl: "/" })}
@@ -57,7 +57,7 @@ function Header() {
               Sign Up
             </button>
           </div>
-          <div className="ml-4">
+          <div className="ml-4 hidden md:flex">
             <button
               className="text-blue-700 font-semibold border border-blue-700 px-5 py-1.5 transition-all hover:border-2 hidden md:block"
             // onClick={() => signIn(provider.id, { callbackUrl: "/" })}
