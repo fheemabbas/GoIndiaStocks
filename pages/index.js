@@ -25,8 +25,8 @@ export default function Home({ posts, articles }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <FeaturedCompaniesSlider />
       <CompaniesTreadSlider />
+      <FeaturedCompaniesSlider />
       <main className="flex">
         <Navbar setIsExpanded={(i) => setIsExpanded(i)} isExpanded={isExpanded} />
         <div className="flex max-xsm:flex-col max-xs:flex-col max-sm:flex-col md:flex-row ">
