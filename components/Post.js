@@ -15,10 +15,8 @@ import { modalState, modalTypeState } from "../atoms/modalAtom";
 import TimeAgo from "timeago-react";
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
-// import { useSession } from "next-auth/react";
 
 function Post({ post, modalPost }) {
-  // const { data: session } = useSession();
   const [modalOpen, setModalOpen] = useRecoilState(modalState);
   const [modalType, setModalType] = useRecoilState(modalTypeState);
   const [postState, setPostState] = useRecoilState(getPostState);

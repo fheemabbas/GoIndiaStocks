@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import Backdrop from "./Backdrop";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import IconButton from "@mui/material/IconButton";
-import { useSession } from "next-auth/react";
 import { Avatar } from "@mui/material";
 import Form from "./Form";
 import { useRecoilValue } from "recoil";
@@ -54,7 +53,6 @@ const gifYouUp = {
 };
 
 const Modal = ({ handleClose, type }) => {
-  // const { data: session } = useSession();
   const post = useRecoilValue(getPostState);
 
   return (

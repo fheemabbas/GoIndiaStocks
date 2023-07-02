@@ -1,7 +1,6 @@
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 function FilterSection({ post, modalPost }) {
-    // const { data: session } = useSession();
     return (
         <>
             <div className='text-lg text-bold uppercase text-blue-700'>
