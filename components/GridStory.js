@@ -85,7 +85,7 @@ const GridStory = ({ isExpanded }) => {
   return (
     <div className='flex flex-col lg:mx-10 md:mx-5'>
       <div className='mt-4 text-lg text-bold uppercase text-blue-500 max-sm:hidden max-md:block'>
-        Market
+        Market Stories
       </div>
       <div className={`grid gap-y-1 max-sm:mt-0 max-md:mt-20 overflow-y-scroll max-h-[450px] ${isExpanded ? "grid-cols-1 w-[250px] md:w-[250px] lg:gap-x-4 md:gap-x-2" : "lg:grid-cols-2 md:grid-cols-1 lg:w-[500px] md:w-[250px] lg:gap-x-4 md:gap-x-2"}`}>
         {story.map((story) => {
