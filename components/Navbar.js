@@ -10,7 +10,7 @@ const Navbar = ({ isExpanded, setIsExpanded }) => {
 
     return (
 
-        <nav className={`flex flex-row  max-sm:absolute max-sm:h-full max-sm:z-9`}>
+        <nav className={`flex flex-row  max-sm:absolute max-sm:h-full max-sm:z-9 mt-5`}>
             {isExpanded && (
                 <div className="lg:flex flex-col lg:items-center w-40 bg-gray-800 text-white px-4 py-2">
                     <a
