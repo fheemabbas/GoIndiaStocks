@@ -3,7 +3,7 @@ import FilterSection from "./filterSection";
 
 function Feed({ posts }) {
   return (
-    <div className="space-y-2 md:max-w-2xl max-w-lg">
+    <div className="space-y-2 md:max-w-2xl max-w-lg max-sm:max-w-100">
       <div className='flex text-lg text-bold uppercase text-blue-500 max-sm:hidden max-md:block'>
         Disscussion Fourm
       </div>
