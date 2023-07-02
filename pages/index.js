@@ -27,10 +27,10 @@ export default function Home({ posts, articles }) {
       <Header />
       <CompaniesTreadSlider />
       <FeaturedCompaniesSlider />
-      <main className="flex max-sm:relative">
+      <main className="flex max-sm:relative p-5">
         <Navbar setIsExpanded={(i) => setIsExpanded(i)} isExpanded={isExpanded} />
-        <div className="flex max-xsm:flex-col max-xs:flex-col max-sm:flex-col md:flex-row ">
-          <div className="max-xs:flex max-sm:flex md:hidden xs:flex-row max-sm:flex-row w-full bg-blue-900 text-white my-5 mx-2">
+        <div className="flex max-xsm:flex-col max-xs:flex-col max-sm:flex-col md:flex-row w-full">
+          <div className="max-xs:flex max-sm:flex md:hidden xs:flex-row max-sm:flex-row w-full bg-blue-900 text-white my-5">
             <div
               onClick={() => {
                 setSection("disscussion")
