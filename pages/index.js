@@ -27,7 +27,7 @@ export default function Home({ posts, articles }) {
       <Header />
       <CompaniesTreadSlider />
       <FeaturedCompaniesSlider />
-      <main className="flex max-sm:relative p-5">
+      <main className="flex max-sm:relative p-3">
         <Navbar setIsExpanded={(i) => setIsExpanded(i)} isExpanded={isExpanded} />
         <div className="flex max-xsm:flex-col max-xs:flex-col max-sm:flex-col md:flex-col w-full">
           <div className="max-xs:flex max-sm:flex max-lg:hidden max-xs:flex-row max-sm:flex-row w-full bg-blue-900 text-white my-5">
