@@ -43,7 +43,7 @@ function Header() {
             </>
           )}
 
-          <div className="flex items-center bg-[#7FFFD4] dark:md:bg-gray-700 py-2.5 px-4 rounded w-full">
+          <div className="flex items-center bg-[#7FFFD4] dark:md:bg-gray-700 py-2.5 max-sm:px-0 px-4  rounded w-full">
             <input
               type="text"
               placeholder="Search"
