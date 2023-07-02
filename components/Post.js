@@ -39,7 +39,7 @@ function Post({ post, modalPost }) {
               <img
                 src={post.photoUrl}
                 alt=""
-                className="m-auto h-40 cursor-pointer"
+                className="m-auto cursor-pointer"
                 onClick={() => {
                   setModalOpen(true);
                   setModalType("gifYouUp");
