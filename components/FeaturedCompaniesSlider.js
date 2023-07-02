@@ -100,25 +100,28 @@ const FeaturedCompaniesSlider = () => {
                 Featured Companies
             </div>
             <div className="bg-blue-100 relative overflow-hidden">
-                <div
-                    ref={sliderRef}
-                    className="flex transition-transform duration-500"
-                >
-                    {featuredCompanies.map((company) => (
-                        <div
-                            key={company.id}
-                            className="flex-shrink-0 w-32 h-16 ml-4"
-                        >
-                            <Image
-                                src={company.logo}
-                                alt={company.name}
-                                width={100}
-                                height={64}
-                                className="object-contain"
-                            />
-                        </div>
-                    ))}
-                </div>
+                <marquee width="100%" direction="left">
+
+                    <div
+                        ref={sliderRef}
+                        className="flex transition-transform duration-500"
+                    >
+                        {featuredCompanies.map((company) => (
+                            <div
+                                key={company.id}
+                                className="flex-shrink-0 w-32 h-16 ml-4"
+                            >
+                                <Image
+                                    src={company.logo}
+                                    alt={company.name}
+                                    width={100}
+                                    height={64}
+                                    className="object-contain"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </marquee>
             </div>
         </div>
     );

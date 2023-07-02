@@ -80,21 +80,24 @@ const CompaniesTreadSlider = () => {
     return (
         <div className="bg-[#1D2226]">
             <div className="text-white relative overflow-hidden">
-                <div
-                    ref={sliderRef}
-                    className="flex transition-transform duration-500"
-                >
-                    {featuredCompanies.map((company) => (
-                        <div
-                            key={company.id}
-                            className="flex-shrink-0 w-56 mx-4"
-                        >
-                            <span className='m-4'>{company.name}</span>
-                            <span className=''>{company.price}</span>
-                            <span className={`m-4 ${company.changeType === 'red' ? "text-red-500" : "text-green-400"}`}>{company.change}</span>
-                        </div>
-                    ))}
-                </div>
+
+                <marquee width="100%" direction="left">
+                    <div
+                        ref={sliderRef}
+                        className="flex transition-transform duration-500"
+                    >
+                        {featuredCompanies.map((company) => (
+                            <div
+                                key={company.id}
+                                className="flex-shrink-0 w-56 mx-4"
+                            >
+                                <span className='m-4'>{company.name}</span>
+                                <span className=''>{company.price}</span>
+                                <span className={`m-4 ${company.changeType === 'red' ? "text-red-500" : "text-green-400"}`}>{company.change}</span>
+                            </div>
+                        ))}
+                    </div>
+                </marquee>
             </div>
         </div>
     );
