@@ -26,8 +26,6 @@ function Header() {
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
 
-  console.log("Current theme is", theme);
-
   return (
     <>
       <header className="sticky top-0 z-40 bg-white dark:bg-[#1D2226] flex items-center justify-around py-1.5 max-sm:px-0 px-3 focus-within:shadow-lg">
@@ -42,7 +40,7 @@ function Header() {
               placeholder="Search"
               className=" bg-transparent text-sm focus:outline-none md:w-10/12 w-full  sm:w-full placeholder-black/70 dark:placeholder-black flex-grow"
             />
-            <SearchRoundedIcon className="dark:text-white" />
+            <SearchRoundedIcon className="dark:text-black" />
           </div>
         </div>
         {/* Right */}

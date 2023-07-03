@@ -60,40 +60,6 @@ const featuredCompanies = [
     // Add more companies...
 ];
 const FeaturedCompaniesSlider = () => {
-    const sliderRef = useRef(null);
-
-    useEffect(() => {
-        let intervalId;
-
-        const startSlider = () => {
-            intervalId = setInterval(() => {
-                slideNext();
-            }, 1000);
-        };
-
-        const stopSlider = () => {
-            clearInterval(intervalId);
-        };
-
-        startSlider();
-
-        // Stop the slider when the component unmounts
-        return () => {
-            stopSlider();
-        };
-    }, []);
-
-    const slideNext = () => {
-        const slider = sliderRef.current;
-
-        if (slider) {
-            slider.scrollBy({
-                left: slider.offsetWidth,
-                behavior: 'smooth',
-            });
-        }
-    };
-
     return (
         <div className="pt-4">
             <div className=' text-lg text-bold uppercase ml-10'>
@@ -103,7 +69,6 @@ const FeaturedCompaniesSlider = () => {
                 <marquee width="100%" direction="left">
 
                     <div
-                        ref={sliderRef}
                         className="flex transition-transform duration-500"
                     >
                         {featuredCompanies.map((company) => (

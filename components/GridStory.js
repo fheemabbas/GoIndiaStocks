@@ -81,18 +81,18 @@ const story = [
     title: "Story 1"
   },
 ]
-const GridStory = ({ isExpanded }) => {
+const GridStory = ({ isExpanded, articles }) => {
   return (
     <div className='flex flex-col lg:mx-10 md:mx-5'>
       <div className='mt-4 text-lg text-bold uppercase text-blue-500 max-sm:hidden max-md:block'>
         Market Stories
       </div>
       <div className={`grid gap-y-1 max-sm:mt-0 mt-5 overflow-y-scroll max-h-[450px] ${isExpanded ? "grid-cols-1 max-sm:w-full max-md:w-[250px] md:w-[250px] lg:gap-x-4 md:gap-x-2 " : " lg:grid-cols-2 md:grid-cols-1 lg:w-[500px] md:w-[250px] lg:gap-x-4 md:gap-x-2"}`}>
-        {story.map((story) => {
+        {articles.map((story) => {
           return <div className="relative w-full">
-            <img src={story.image} alt={story.title} className="w-full h-32 rounded-md mb-4 object-cover" />
-            <div className="absolute bottom-10 left-0 bg-opacity-50 text-white">
-              <h3 className="text-lg font-semibold">{story.title}</h3>
+            <img src={story.image} alt={story.title} className="w-full h-40 rounded-md mb-4 object-cover" />
+            <div className="absolute bottom-5 left-0 bg-opacity-50 text-white">
+              <h3 className="text-md p-2 font-semibold">{story.title}</h3>
             </div>
           </div>
         })}

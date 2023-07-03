@@ -47,43 +47,12 @@ const featuredCompanies = [
 ];
 
 const CompaniesTreadSlider = () => {
-    const sliderRef = useRef(null);
-
-    useEffect(() => {
-        let intervalId;
-        const startSlider = () => {
-            intervalId = setInterval(() => {
-                slideNext();
-            }, 1000);
-        };
-        const stopSlider = () => {
-            clearInterval(intervalId);
-        };
-        startSlider();
-        // Stop the slider when the component unmounts
-        return () => {
-            stopSlider();
-        };
-    }, [sliderRef.current]);
-
-    const slideNext = () => {
-        const slider = sliderRef.current;
-
-        if (slider) {
-            slider.scrollBy({
-                left: slider.offsetWidth,
-                behavior: 'smooth',
-            });
-        }
-    };
-
     return (
         <div className="bg-[#1D2226]">
             <div className="text-white relative overflow-hidden">
 
                 <marquee width="100%" direction="left">
                     <div
-                        ref={sliderRef}
                         className="flex transition-transform duration-500"
                     >
                         {featuredCompanies.map((company) => (

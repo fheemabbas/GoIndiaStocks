@@ -8,7 +8,7 @@ function Feed({ posts }) {
         Disscussion Fourm
       </div>
       <FilterSection />
-      <div className="overflow-y-scroll max-h-[450px]">
+      <div className="overflow-y-scroll max-sm:h-full max-h-[350px]">
         {posts.map((post) => <Post key={post._id} post={post} />)}
       </div>
     </div>
